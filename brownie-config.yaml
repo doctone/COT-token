@@ -1,0 +1,20 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.4.1
+compiler:
+  solc:
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.4.1'
+dotevn: .env
+networks:
+  default: development
+  rinkeby: active
+wallets:
+  from_key: ${PRIVATE_KEY}
+# live:
+#   - name: Ethereum
+#     networks:
+#       - name: Ropsten (Infura)
+#         chainid: 3
+#         id: ropsten
+#         host: https://mainnet.infura.io/v3/$WEB3_INFURA_PROJECT_ID
+#         explorer: https://api-ropsten.etherscan.io/api
