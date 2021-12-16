@@ -6,6 +6,6 @@ token_name = "COTToken"
 token_symbol = "COT"
 
 def main():
-    account = accounts[0]
+    account = account = accounts.add(config["wallets"]["from_key"])
     erc20 = COTToken.deploy(initial_supply,{"from": account}
     )
